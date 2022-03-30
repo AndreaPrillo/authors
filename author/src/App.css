@@ -1,0 +1,35 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-bottom: 30px;
+}
+input{
+  border: 1px solid rgb(184, 184, 182);
+  border-radius: 5px ;
+  padding: 5px;
+}
+.form-input{
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: rgb(241, 241, 241);
+  border: 2px solid rgb(218, 217, 217);
+  border-radius: 5px;
+  color: rgb(145, 143, 143);
+}
+.form-btn{
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  
+}
