@@ -9,7 +9,6 @@
 form{
   display: flex;
   flex-direction: column;
-  align-items: center; 
   margin-bottom: 30px;
 }
 input{
@@ -27,9 +26,24 @@ input{
   color: rgb(145, 143, 143);
 }
 .form-btn{
-  width: 5%;
   display: flex;
-  justify-content: space-between;
-  padding: 3px;
+  width: 20%;  
+}
+
+.btn{
+  margin-right: 10px;
+  padding: 5px;
   
+}
+
+.list{
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+
+}
+
+.link {
+  color: black;
+  text-decoration: none;
 }

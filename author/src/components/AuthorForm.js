@@ -31,19 +31,26 @@ const AuthorForm = (props) => {
     
     return (
         <div>
+            <h1>Favorite authors</h1>
             <Link to={"/author"}>Go to Home</Link>
+            <p>Add a new author</p>
             <form onSubmit={onSubmitHandler}>
                 <div className="form-input">
                     <label>Name </label>
                     <input type="text" name="name" value={name} onChange = {(e)=>setName(e.target.value)}/>
-                    
-                </div>
-                { errors.name ? 
+                    { errors.name ? 
                         <p>{errors.name.message}</p>
                         : null
                     }
-                <Link to={"/author"}>Cancel</Link>
-                <button type="submit" className="form-btn">Create</button>
+                </div>
+                <div className="form-btn">
+                    <button className="btn">{
+                                                <Link className="link" to={"/author"}>Cancel</Link>
+                                            }  
+                    </button>
+                    <button type="submit" className="btn">Create</button>
+                </div>
+                
             </form>
         </div>
         

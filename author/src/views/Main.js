@@ -10,7 +10,9 @@ const Main = (props) => {
 
     return (
         <div>
+            <h1>Favorite authors</h1>
             <Link to={"/author/new/"}>Add an author</Link>
+            <p>We have quotes by:</p>
             <AuthorList author={author} setAuthor={setAuthor} removeFromDom={removeFromDom}/>
         </div>
     );
